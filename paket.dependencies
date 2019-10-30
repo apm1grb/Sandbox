@@ -1,0 +1,3 @@
+source https://pkgs.dev.azure.com/pas4/_packaging/PG-Nuget-Feed-3/nuget/v3/index.json username: "PAT" password: "qihfeqhkorsfjusx3ck5qlgtur2usha7xlxvflljfwej2jdvhhnq" authtype: "basic"
+
+nuget Newtonsoft.Json

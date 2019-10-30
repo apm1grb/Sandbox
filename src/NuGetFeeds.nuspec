@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <!-- The identifier that must be unique within the hosting gallery -->
+        <id>NuGetFeeds</id>
+
+        <!-- The package version number that is used when resolving dependencies -->
+        <version>1.0</version>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>Marko</authors>
+
+        <!-- 
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  
+        -->
+        <owners>mapfel</owners>
+        
+         <!-- Project URL provides a link for the gallery -->
+        <projectUrl>http://github.com/mapfel/NuGetFeed</projectUrl>
+
+         <!-- License information is displayed on the gallery -->
+        <license type="expression">Apache-2.0</license>
+        
+
+        <!-- The icon is used in Visual Studio's package manager UI -->
+        <iconUrl>http://github.com/contoso/UsefulStuff/nuget_icon.png</iconUrl>
+
+        <!-- 
+            If true, this value prompts the user to accept the license when
+            installing the package. 
+        -->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+        <!-- Any details about this particular release -->
+        <releaseNotes>First version</releaseNotes>
+
+        <!-- 
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. 
+        -->
+        <description>Demo packages to show NuGet.</description>
+
+        <!-- Copyright information -->
+        <copyright>Copyright ©2019 Marko Apfel</copyright>
+
+        <!-- Tags appear in the gallery and can be used for tag searches -->
+        <tags>demo mapfel</tags>
+
+        <!-- Dependencies are automatically installed when the package is installed -->
+        <dependencies>
+            <dependency id="Newtonsoft.Json" version="9.0" />
+        </dependencies>
+    </metadata>
+
+    <!-- A readme.txt to display when the package is installed -->
+    <files>
+        <file src="NuGetFeeds/bin/Debug/NuGetFeeds.dll" target="lib" />
+    </files>
+</package>
