@@ -1,0 +1,15 @@
+source https://api.nuget.org/v3/index.json
+framework: net48
+
+nuget FluentAssertions
+
+group Tests
+  framework: net48
+  source https://api.nuget.org/v3/index.json
+
+  nuget xunit
+  nuget xunit.core
+  nuget xUnit.Asserts.Compare
+  nuget xunit.abstractions
+  nuget xunit.runner.console
+  nuget xunit.runner.visualstudio
