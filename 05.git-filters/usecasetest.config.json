@@ -1,0 +1,98 @@
+{
+  "UseCase1aVrmRecording": {
+    "AddDevicesInCCAndVerifyExistenceInOc": {
+      "LoginDialog": {
+        "User": "admin",
+        "Password": "admin"
+      },
+      "VRM": {
+        "Name": "testVrm",
+        "IP-Address": "asset-ip",
+        "RcpPort": "1756",
+        "ConnectionSecurity": "Secured",
+        "HttpsPort": "443",
+        "HttpPort": "80",
+        "Type": "Primary",
+        "Credentials": {
+          "User": "srvadmin",
+          "Password": ""
+        }
+      },
+      "Pool": {
+        "Name": "testPool",
+        "Identification": "1",
+        "RecordingPreferenceMode": "Automatic",
+        "SanityCheckPeriod": "5",
+        "SecondaryTargetUsage": "Off",
+        "BlockReservationTime": "6",
+        "AllowLargeLuns": "false"
+      },
+      "Encoder": {
+        "Name": "testEncoder",
+        "IP-Address": "4.5.6.7",
+        "Type": "Dinion IP"
+      },
+      "VSG": {
+        "Name": "testVsg",
+        "IP-Address": "asset-ip",
+        "Port": "8443",
+        "Credentials": {
+          "User": "service",
+          "Password": ""
+        },
+        "PasswordDisplaying": "false",
+        "ConnectionSecurity": "SecuredConnection"
+      }
+    }
+  },
+  "UseCase2Decoder": {
+    "AddDecoderAndMonitorGroupInCcAndVerifyExistenceInOc": {
+      "LoginDialog": {
+        "User": "admin",
+        "Password": ""
+      },
+      "Decoder": {
+        "Name": "VipXD",
+        "IP-Address": "172.31.23.175"
+      },
+      "MonitorGroup": {
+        "Name": "testMG",
+        "MonitorName": "Monitor 1 (172.31.23.175)"
+      }
+    },
+    "AddMonitorGroupWithDecoderInCCAndVerifyExistenceInOc": {
+      "LoginDialog": {
+        "User": "admin",
+        "Password": ""
+      },
+      "Decoder": {
+        "Name": "VJD8000 w 2 Monitors",
+        "IP-Address": "172.31.22.248",
+        "Credentials": {
+          "User": "service",
+          "Password": "Sabine9t!"
+        }
+      },
+      "MonitorGroup1": {
+        "Name": "testMG1",
+        "MonitorNumber": "1"
+      },
+      "MonitorGroup2": {
+        "Name": "testMG2",
+        "MonitorName": "Monitor 2 (172.31.22.248)"
+      }
+    }
+  },
+  "UseCase6PasswordPolicy":
+  {
+      "Server" : {
+	      "Name": "Test",
+	      "IP-Address":
+	      {
+		      "Private": "192.168.0.182",
+		      "Public": "192.168.0.182"
+	      },
+	      "Description": "Test"
+      }
+  }
+}
