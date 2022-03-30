@@ -77,4 +77,4 @@ The filter needs to get activated for the desired files.
 
 - [Protect secrets in Git with the clean/smudge filter](https://developers.redhat.com/articles/2022/02/02/protect-secrets-git-cleansmudge-filter#)
 - [Git Smudge and Clean Filters: Making Changes So You Don’t Have To](https://bignerdranch.com/blog/git-smudge-and-clean-filters-making-changes-so-you-dont-have-to/)
-- #374969
+- [PBI: Incorporate Git smudge & clean filters](https://tfsservice.bst-eng.com/tfs/OT1TFS/BVMS/_workitems/edit/374969)
